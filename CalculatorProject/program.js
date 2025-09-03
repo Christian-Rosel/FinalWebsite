@@ -49,4 +49,20 @@ function equal() {
     } else {
         output.value = result;
     }
-}   
+
+}
+function pressed(event) {
+    let press = event.key;
+    if(press === '+' || press === '-' || press === '*' || press === '/'){
+        operator(press);
+    }  else if (press === 'Enter') {
+        equal();
+    }
+}
+function unpressed(event) {
+    let press = event.key;
+    if(press === '+' || press === '-' || press === '*' || press === '/'){
+        document.getElementById("answer_box").value = "";
+    }
+    
+}
