@@ -9,7 +9,7 @@
     </head>
     <body>
         <div class="calculator_box">
-            <input type="text" class="answer_box" value="" id="answer_box" maxlength="8" placeholder="0">
+            <input type="text" class="answer_box" value="" id="answer_box" maxlength="8" placeholder="0" onkeydown="pressed(event)" onkeyup="unpressed(event)>
             <div class="rows" id="row1">
                 <button type="button" class="number_box" onclick="addnumber('7')">7</button>
                 <button type="button" class="number_box" onclick="addnumber('8')">8</button>
@@ -37,4 +37,5 @@
             </div>
         </div>
     </body>
+
 </html>
